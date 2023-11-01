@@ -31,16 +31,12 @@ public class CompanyServiceImpl implements CompanyService {
 
     @Override
     public boolean updateCompany(Company company) {
-        boolean isUpdated = false;
-        System.out.println("Это ДЗ");
-        return isUpdated;
+        return companyDao.updateCompany(company);
     }
 
     @Override
     public boolean deleteCompany(int id) {
-        System.out.println("Это ДЗ");
-        // return isDeleted;
-        return false;
+        return companyDao.deleteCompany(id);
     }
 
     @Override
